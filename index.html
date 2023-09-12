@@ -44,7 +44,6 @@
         </address>
     </div>
     </header>
-    <!-- HEADER PAGE -->
 
     <main>
         <!-- SECTION HERO -->
@@ -54,7 +53,6 @@
                 <button type="button" class="order-button">Order Service</button>
             </div>
         </section>
-        <!-- SECTION HERO -->
 
         <!-- MAIN PAGE -->
         <section class="content">
@@ -105,7 +103,6 @@
                     </ul>
             </div>
         </section>
-        <!-- MAIN PAGE -->
 
         <!-- OUR TEAM -->
         <section class="team-section">
@@ -270,7 +267,6 @@
                 </ul>
             </div>
         </section>
-        <!-- OUT TEAM -->
     
     <!-- PORTFOLIO -->
     <section class="portfolio-sec">
@@ -347,7 +343,6 @@
         </div>
     </section>
     </main>
-    <!-- PORTFOLIO -->
 
     <!-- PAGE FOOTER -->
     <footer class="ending">
@@ -390,8 +385,79 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="sub-email-footer-wrapper">
+                <label class="sub-email-footer-line" for="user-sub-email">Subscribe</label>
+                <div class="sub-line-footer-container">
+                    <input class="email-footer-field" tyoe="text" id="user-sub-email" placeholder="E-mail">
+                    <button class="sub-footer-btn">Subscribe
+                        <svg class="footer-send-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+
         </div>
     </footer>
+
+    <!-- BACKDROP WITH MODAL WINDOW -->
+
+    <div class="backdrop">
+        <div class="modal">
+            <button class="close-btn">
+                <svg class="close-btn-icon" width="8px" height="8px" aria-label="close icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="review-form-field">Leave your contacts and we will call you back</p>
+            <form class="review-form">
+                <div class="review-form-container">
+                    <label class="review-form-label" for="user-name">Name</label>
+                    <div class="review-form-icon-wrapper">
+                        <input class="review-form-input" type="text" id="user-name" name="user_name" pattern="[a-zA-Z]+" required>
+                        <svg class="review-form-icon" width="18" height="18" aria-label="person icon">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <label class="review-form-label" for="user-phone">Phone</label>
+                    <div class="review-form-icon-wrapper">
+                        <input class="review-form-input" type="tel" id="user-phone" name="user_phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required>
+                        <svg class="review-form-icon" width="18" height="24" aria-label="phone icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>   
+                    <label class="review-form-label" for="user-email">Email</label>
+                    <div class="review-form-icon-wrapper">
+                        <input class="review-form-input" type="email" id="user-email" name="user_email" required>
+                        <svg class="review-form-icon" width="18" height="24" aria-label="email icon">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <div class="review-comment-form-wrapper">
+                        <label class="review-form-label" for="user-comment">Comment</label>
+                        <textarea class="review-comment-form" id="user-comment" name="comment" placeholder="Text input"></textarea>
+                    </div>
+                </div>
+                    <div class="review-form-checkbox-wrapper">
+                        <input class="review-form-checkbox visually-hidden" type="checkbox" id="user-privacy" name="user_privacy" value="true" required>
+                        <label class="review-form-checkbox-text" for="user-privacy"> 
+                            <span class="own-review-form-checkbox">
+                                <svg class="own-review-form-checkmark" width="9" height="7" aria-label="checkmark">
+                                    <use href="./images/icons.svg#icon-check-mark"></use>
+                                </svg>
+                            </span> 
+                            I accept
+                            the terms and conditions of the <a class="review-link-privacy" href="">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button class="review-form-btn-submit" type="submit">Send</button>
+
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
-    <!-- PAGE FOOTER -->
